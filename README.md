@@ -40,6 +40,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://nextjs.org/">Next.js</a></li>
+    <li><a href="https://tailwindcss.com">Tailwind CSS</a></li>
   </ul>
 </details>
 
