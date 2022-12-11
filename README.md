@@ -1,34 +1,162 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<div align="center">
+  <img src="logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+  <h3><b>Cultural Career and Community Management</b></h3>
+</div>
 
-First, run the development server:
+<!-- TABLE OF CONTENTS -->
 
-```bash
-npm run dev
-# or
-yarn dev
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [Hart's Website] <a name="about-project"></a>
+
+**[Hart's Website]** is a place to connect artists with potential buyers and the art community.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://nextjs.org/">Next.js</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[Get artists' information]**
+- **[Enroll as new artist]**
+- **[Choose conferences from a carousel]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Coming soon]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- node.js
+- npm
+- yarn
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com:didierganthier/harts-website.git
+  cd harts-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Install this project with:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```sh
+  yarn install
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Usage
 
-## Learn More
+To run the project, execute the following command:
 
-To learn more about Next.js, take a look at the following resources:
+<!--
+Example command:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+  yarn dev
+```
+--->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Deploy on Vercel
+<!-- AUTHORS -->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👥 Authors <a name="authors"></a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Mention all of the collaborators of this project.
+
+### 👤 Didier Peran Ganthier
+
+- GitHub: [@didierganthier](https://github.com/didierganthier)
+- Twitter: [@didierganthier_](https://twitter.com/didierganthier_)
+- LinkedIn: [Didier Peran Ganthier](https://linkedin.com/in/didierganthier)
+
+### 👤 Marco Oquendo 
+
+- GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC). 
+- Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc). 
+- LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/MarcoOquendoC/). 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Give a ⭐️ if you like this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Special Thanks to everyone who will get time to check this code and suggest any issues.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
