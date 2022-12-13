@@ -28,9 +28,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hart's Website] <a name="about-project"></a>
+# 📖 Hart's Website <a name="about-project"></a>
 
-**[Hart's Website]** is a place to connect artists with potential buyers and the art community.
+**Hart's Website** is a place to connect artists with potential buyers and the art community.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon]()
+- [Coming soon](https://github.com/didierganthier/harts-website/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,13 +98,9 @@ Install this project with:
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   yarn dev
 ```
---->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
