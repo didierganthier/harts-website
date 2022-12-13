@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./public/hartslogo.png" alt="logo" width="140"  height="auto" />
   <br/>
   <h3><b>Cultural Career and Community Management</b></h3>
 </div>
