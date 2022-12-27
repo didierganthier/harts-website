@@ -57,6 +57,11 @@ export default function Home() {
           </div>
         </div>
       </nav>
+      <p className=''>Cultural career and community management</p>
+      <p>POUR UNE MEILLEURE VALORISATION DE NOS JEUNES TALENTS.</p>
+      <button>
+      DISCOVER
+      </button>
     </div>
   )
 }
