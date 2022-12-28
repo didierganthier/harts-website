@@ -1,5 +1,8 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
+import DiscoverComponent from '../components/DiscoverComponent';
+import LearningComponent from '../components/LearningComponent';
 
 export default function Home() {
 
@@ -7,7 +10,7 @@ export default function Home() {
 
   const [current, setCurrent] = useState(1);
 
-  const [navLinks, setNavLinks] = useState([
+  const navLinks = [
     {
       id: 1,
       name: 'Home',
@@ -33,11 +36,14 @@ export default function Home() {
       name: 'Contact',
       url: '#contact',
     },
-  ]);
+  ];
 
   return (
-    <div>
-      <nav className="bg-[#222222] border-gray-200 px-2 sm:px-4 py-2.5">
+    <div className='bg-[#222222]'>
+      <Head>
+        <title>Hart&apos;s</title>
+      </Head>
+      <nav className="border-gray-200 px-2 sm:px-4 py-2.5">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="#" className="flex items-center">
             <Image src="/./hartslogo.png" className="h-6 mr-3 sm:h-9" alt="Hart's Logo" width="100" height="100" />
@@ -50,13 +56,15 @@ export default function Home() {
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[#222222] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
               {navLinks.map((link) => (
                 <li key={link.id} onClick={() => setCurrent(link.id)}>
-                  <a href={link.url} className={`block py-2 pl-3 pr-4 text-white ${current === link.id ? "bg-[#B88222]": ""} rounded md:bg-transparent`}>{link.name}</a>
+                  <a href={link.url} className={`block py-2 pl-3 pr-4 text-white ${current === link.id ? "bg-[#B88222]" : ""} rounded md:bg-transparent`}>{link.name}</a>
                 </li>
               ))}
             </ul>
           </div>
         </div>
       </nav>
+      <DiscoverComponent />
+      <LearningComponent />
     </div>
   )
 }
