@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
-import Discover from '../components/Discover';
+import DiscoverComponent from '../components/DiscoverComponent';
+import LearningComponent from '../components/LearningComponent';
 
 export default function Home() {
 
@@ -62,7 +63,8 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <Discover />
+      <DiscoverComponent />
+      <LearningComponent />
     </div>
   )
 }
