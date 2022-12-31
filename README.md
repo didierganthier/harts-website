@@ -116,12 +116,6 @@ To run the project, execute the following command:
 - Twitter: [@didierganthier_](https://twitter.com/didierganthier_)
 - LinkedIn: [Didier Peran Ganthier](https://linkedin.com/in/didierganthier)
 
-### 👤 Marco Oquendo 
-
-- GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC). 
-- Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc). 
-- LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/MarcoOquendoC/). 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
