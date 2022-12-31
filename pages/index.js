@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import DiscoverComponent from '../components/DiscoverComponent';
 import LearningComponent from '../components/LearningComponent';
+import artPainting from '../assets/art-painting.JPG';
 
 export default function Home() {
 
@@ -39,11 +40,11 @@ export default function Home() {
   ];
 
   return (
-    <div className='bg-[#222222]'>
+    <div className=''>
       <Head>
         <title>Hart&apos;s</title>
       </Head>
-      <nav className="border-gray-200 px-2 sm:px-4 py-2.5">
+      <nav className="border-gray-200 px-2 sm:px-4 py-2.5 bg-[#222222]">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="#" className="flex items-center">
             <Image src="/./hartslogo.png" className="h-6 mr-3 sm:h-9" alt="Hart's Logo" width="100" height="100" />
@@ -65,6 +66,32 @@ export default function Home() {
       </nav>
       <DiscoverComponent />
       <LearningComponent />
+      <div className='flex flex-col justify-center items-center rounded-tl-3xl bg-[#222222]'>
+        <p className='uppercase my-8 text-white text-xl font-bold'>Unlock your potential</p>
+        <div className='mb-5'>
+          <div className='flex flex-col gap-4'>
+            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+            <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
+              <p>Art + Painting</p>
+              <svg class="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+          <div className='flex flex-col gap-4 my-8'>
+            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+            <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
+              <p>Art + Painting</p>
+              <svg class="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+          <div className='flex flex-col gap-4 my-8'>
+            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+            <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
+              <p>Art + Painting</p>
+              <svg class="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
