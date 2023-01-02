@@ -1,11 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import DiscoverComponent from '../components/DiscoverComponent';
 import LearningComponent from '../components/LearningComponent';
 import artPainting from '../assets/art-painting.JPG';
-import discoverImg from '../assets/discover-img.png';
-import CarouselElement from "../components/CarouselElement";
+import hartsEventImg from '../assets/hartsevent.jpg';
 
 export default function Home() {
 
@@ -44,33 +43,62 @@ export default function Home() {
   const carouselElements = [
     {
       id: 1,
-      imageUrl: artPainting,
-      title: 'Art Painting',
+      imageUrl: hartsEventImg,
+      title: '5 Ways to Boost your Creativity',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nunc est ultricies nisl, nec ultricies elit nisl vel nisl.',
-      buttonText: 'Learn More',
+      buttonText: 'Discover More',
     },
     {
       id: 2,
-      imageUrl: artPainting,
-      title: 'Art Painting',
+      imageUrl: hartsEventImg,
+      title: '5 Ways to Boost your Creativity',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nunc est ultricies nisl, nec ultricies elit nisl vel nisl.',
-      buttonText: 'Learn More',
+      buttonText: 'Discover More',
     },
     {
       id: 3,
-      imageUrl: artPainting,
-      title: 'Art Painting',
+      imageUrl: hartsEventImg,
+      title: '5 Ways to Boost your Creativity',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nunc est ultricies nisl, nec ultricies elit nisl vel nisl.',
-      buttonText: 'Learn More',
+      buttonText: 'Discover More',
     },
     {
       id: 4,
-      imageUrl: artPainting,
-      title: 'Art Painting',
+      imageUrl: hartsEventImg,
+      title: '5 Ways to Boost your Creativity',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nunc est ultricies nisl, nec ultricies elit nisl vel nisl.',
-      buttonText: 'Learn More',
+      buttonText: 'Discover More',
     }
   ];
+
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    let currentScroll = 0;
+    const interval = setInterval(() => {
+      currentScroll += 3;
+      carouselRef.current.scrollLeft = currentScroll;
+      if (currentScroll > carouselRef.current.scrollWidth) {
+        currentScroll = 0;
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    let currentScroll = -2;
+    const interval = setInterval(() => {
+      currentScroll += 3;
+      carouselRef.current.scrollLeft = currentScroll;
+      if (currentScroll > carouselRef.current.scrollWidth) {
+        currentScroll = 0;
+      }
+      setCurrentIndex(Math.floor((currentScroll / carouselRef.current.offsetWidth) + 1));
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className=''>
@@ -125,13 +153,31 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center bg-[#222222]'>
+      <div className='flex flex-col justify-center items-center bg-[#222222] pb-10'>
         <p className='uppercase my-8 text-white text-xl font-bold text-center'>Where creativity meets Productivity</p>
-        <div className='flex flex-row overflow-auto gap-10'>
-          <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
-          <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
-          <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+        <div className='flex flex-row overflow-auto gap-10 w-screen px-4' ref={carouselRef}>
+          {carouselElements.map((element) => (
+            <div key={element.id} className='flex-shrink-0 scale-90 hover:scale-100 z-50'>
+              <Image src={element.imageUrl} alt={element.title} className='rounded-lg' width="250" height="250" />
+              <p className='text-[#B88222] font-bold text-xs py-2'>{element.title}</p>
+              <p className='w-[250px] text-[9px] text-white'>{element.description}</p>
+              <button className='bg-white rounded-xl text-[8px] px-4 mt-2 uppercase font-bold flex items-center'>
+                {element.buttonText}
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+            </div>
+          ))}
         </div>
+        <div className='flex flex-row justify-center py-4 gap-2'>
+        {carouselElements.map((element, index) => (
+          <div
+            key={element.id}
+            className={`w-4 h-4 rounded-full cursor-pointer bg-${index === currentIndex ? 'white' : 'transparent border border-white'}` }
+            onClick={() => carouselRef.current.scrollTo({ left: index * carouselRef.current.offsetWidth, behavior: 'smooth' })}
+          />
+        ))}
+      </div>
       </div>
     </div>
   )
