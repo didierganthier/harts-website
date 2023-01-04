@@ -86,7 +86,7 @@ export default function Home() {
             <span className="sr-only">Open main menu</span>
             <svg className="w-6 h-6" onClick={() => setIsOpen(!isOpen)} aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
           </button>
-          <div className={`${isOpen ? "" : "hidden"} w-full md:block md:w-auto`}>
+          <div className={`${isOpen ? "" : "hidden"} absolute top-12 left-0 md:static w-full md:block md:w-auto`}>
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[#222222] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
               {navLinks.map((link) => (
                 <li key={link.id} onClick={() => setCurrent(link.id)}>
@@ -106,21 +106,21 @@ export default function Home() {
             <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
             <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
               <p>Art + Painting</p>
-              <svg class="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              <svg className="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </div>
           </div>
           <div className='flex flex-col gap-4 my-8'>
             <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
             <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
               <p>Art + Painting</p>
-              <svg class="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              <svg className="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </div>
           </div>
           <div className='flex flex-col gap-4 my-8'>
             <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
             <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
               <p>Art + Painting</p>
-              <svg class="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              <svg className="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </div>
           </div>
         </div>
