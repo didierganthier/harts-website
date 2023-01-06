@@ -168,19 +168,19 @@ export default function Home() {
         >
           {/* <div className='swiper-wrapper'> */}
             <SwiperSlide>
-              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
           {/* </div> */}
           {/* <div class="swiper-pagination" />
