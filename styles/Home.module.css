@@ -108,6 +108,14 @@
   margin-left: 0.5rem;
 }
 
+.swiper {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 600px;
+  height: 300px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
