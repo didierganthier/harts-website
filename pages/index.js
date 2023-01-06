@@ -7,6 +7,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css/bundle';
 import DiscoverComponent from '../components/DiscoverComponent';
 import LearningComponent from '../components/LearningComponent';
+import CommunityComponent from '../components/CommunityComponent';
 import artPainting from '../assets/art-painting.JPG';
 // import discoverImg from '../assets/discover-img.png';
 // import CarouselElement from "../components/CarouselElement";
@@ -180,6 +181,7 @@ export default function Home() {
           {/* <div class="swiper-scrollbar"></div> */}
         </Swiper>
       </div>
+      <CommunityComponent />
     </div>
   )
 }
