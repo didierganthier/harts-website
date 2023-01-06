@@ -1,11 +1,15 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+// import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 import DiscoverComponent from '../components/DiscoverComponent';
 import LearningComponent from '../components/LearningComponent';
 import artPainting from '../assets/art-painting.JPG';
-import discoverImg from '../assets/discover-img.png';
-import CarouselElement from "../components/CarouselElement";
+// import discoverImg from '../assets/discover-img.png';
+// import CarouselElement from "../components/CarouselElement";
 
 export default function Home() {
 
@@ -72,6 +76,28 @@ export default function Home() {
     }
   ];
 
+  // const swiper = new Swiper('.swiper', {
+  //   // Optional parameters
+  //   direction: 'vertical',
+  //   loop: true,
+  
+  //   // If we need pagination
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //   },
+  
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  
+  //   // And if we need scrollbar
+  //   // scrollbar: {
+  //   //   el: '.swiper-scrollbar',
+  //   // },
+  // });
+
   return (
     <div className=''>
       <Head>
@@ -127,11 +153,32 @@ export default function Home() {
       </div>
       <div className='flex flex-col justify-center items-center bg-[#222222]'>
         <p className='uppercase my-8 text-white text-xl font-bold text-center'>Where creativity meets Productivity</p>
-        <div className='flex flex-row overflow-auto gap-10'>
-          <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
-          <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
-          <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
-        </div>
+        {/* <div className='swiper w-48'> */}
+        <Swiper 
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
+        >
+          {/* <div className='swiper-wrapper'> */}
+            <SwiperSlide>
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+            </SwiperSlide>
+          {/* </div> */}
+          {/* <div class="swiper-pagination" />
+
+          <div class="swiper-button-prev" />
+          <div class="swiper-button-next" /> */}
+
+          {/* <div class="swiper-scrollbar"></div> */}
+        </Swiper>
       </div>
     </div>
   )
