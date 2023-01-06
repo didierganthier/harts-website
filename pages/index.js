@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import DiscoverComponent from '../components/DiscoverComponent';
@@ -159,19 +159,27 @@ export default function Home() {
         <Swiper 
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
           {/* <div className='swiper-wrapper'> */}
             <SwiperSlide>
-              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
           {/* </div> */}
           {/* <div class="swiper-pagination" />
