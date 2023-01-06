@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.about-image {
+  max-width: 7rem;
+}
+
 .swiper {
   position: absolute;
   top:0;
