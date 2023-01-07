@@ -78,28 +78,6 @@ export default function Home() {
     }
   ];
 
-  // const swiper = new Swiper('.swiper', {
-  //   // Optional parameters
-  //   direction: 'vertical',
-  //   loop: true,
-  
-  //   // If we need pagination
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //   },
-  
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-  
-  //   // And if we need scrollbar
-  //   // scrollbar: {
-  //   //   el: '.swiper-scrollbar',
-  //   // },
-  // });
-
   return (
     <div className=''>
       <Head>
@@ -162,7 +140,6 @@ export default function Home() {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
           onSlideChange={() => console.log('slide change')}
         >
           {/* <div className='swiper-wrapper'> */}
