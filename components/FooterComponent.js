@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import discoverImg from '../assets/discover-img.png';
+import footerImg from '../assets/footer.png';
 import ButtonForward from './ButtonForward';
 
 const FooterComponent = () => {
@@ -71,7 +71,7 @@ const FooterComponent = () => {
                 </ul>
             </div>
             <div className='flex'>
-                <Image src={discoverImg} className="w-full h-24" alt="Discover Image" />
+                <Image src={footerImg} className="w-full h-24" alt="Discover Image" />
             </div>
         </div>
     )
