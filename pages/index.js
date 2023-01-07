@@ -3,15 +3,12 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import DiscoverComponent from '../components/DiscoverComponent';
 import LearningComponent from '../components/LearningComponent';
 import CommunityComponent from '../components/CommunityComponent';
 import AboutComponent from '../components/AboutComponent';
 import artPainting from '../assets/art-painting.JPG';
-// import discoverImg from '../assets/discover-img.png';
-// import CarouselElement from "../components/CarouselElement";
 
 export default function Home() {
 
@@ -133,7 +130,6 @@ export default function Home() {
       </div>
       <div className='flex flex-col justify-center items-center bg-[#222222]'>
         <p className='uppercase my-8 text-white text-xl font-bold text-center'>Where creativity meets Productivity</p>
-        {/* <div className='swiper w-48'> */}
         <Swiper 
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
@@ -142,7 +138,6 @@ export default function Home() {
           pagination={{ clickable: true }}
           onSlideChange={() => console.log('slide change')}
         >
-          {/* <div className='swiper-wrapper'> */}
             <SwiperSlide>
               <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
@@ -158,13 +153,6 @@ export default function Home() {
             <SwiperSlide>
               <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
             </SwiperSlide>
-          {/* </div> */}
-          {/* <div class="swiper-pagination" />
-
-          <div class="swiper-button-prev" />
-          <div class="swiper-button-next" /> */}
-
-          {/* <div class="swiper-scrollbar"></div> */}
         </Swiper>
       </div>
       <CommunityComponent />
