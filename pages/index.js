@@ -8,6 +8,7 @@ import 'swiper/css/bundle';
 import DiscoverComponent from '../components/DiscoverComponent';
 import LearningComponent from '../components/LearningComponent';
 import CommunityComponent from '../components/CommunityComponent';
+import FooterComponent from '../components/FooterComponent';
 import AboutComponent from '../components/AboutComponent';
 import artPainting from '../assets/art-painting.JPG';
 // import discoverImg from '../assets/discover-img.png';
@@ -192,6 +193,7 @@ export default function Home() {
       </div>
       <CommunityComponent />
       <AboutComponent />
+      <FooterComponent />
     </div>
   )
 }
