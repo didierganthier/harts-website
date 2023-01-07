@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className={`${isOpen ? "" : "hidden"} absolute top-12 left-0 md:static w-full md:block md:w-auto`}>
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[#222222] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
               {navLinks.map((link) => (
-                <li key={link.id} onClick={() => setCurrent(link.id)}>
+                <li key={link.id} className='ml-0 nav-item' onClick={() => setCurrent(link.id)}>
                   <a href={link.url} className={`block py-2 pl-3 pr-4 text-white ${current === link.id ? "bg-[#B88222]" : ""} rounded md:bg-transparent`}>{link.name}</a>
                 </li>
               ))}

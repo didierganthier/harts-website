@@ -51,8 +51,8 @@ export default function Home() {
       </Head>
       <div className='md:flex h-full min-h-screen'>
         <DiscoverComponent />
-        <div className='flex bg-[#222222]'>
-          <Image src={discoverImg} className="w-full sm:rounded-l-3xl" alt="Discover Image" />
+        <div className='flex md:w-[50%] bg-[#222222]'>
+          <Image src={discoverImg} className="w-full sm:rounded-l-3xl object-cover" alt="Discover Image" />
         </div>
       </div>
       <LearningComponent />
