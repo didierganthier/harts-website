@@ -5,7 +5,7 @@ import ButtonForward from './ButtonForward';
 
 const CommunityComponent = () => {
     return (
-        <div className='bg-white'>
+        <div className='bg-white md:flex md:flex-row-reverse items-center'>
             <div className='mx-4 py-8'>
                 <p className='pb-1 font-bold uppercase text-[12px] text-[#B88222]'>Our community</p>
                 <p className='uppercase text-2xl pb-2 font-extrabold'>Having a network of creative</p>
