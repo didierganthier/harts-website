@@ -9,10 +9,14 @@ const CommunityComponent = () => {
             <div className='mx-4 md:px-12 py-8'>
                 <p className='pb-1 font-bold uppercase text-[12px] text-[#B88222]'>Our community</p>
                 <p className='uppercase text-2xl pb-2 font-extrabold'>Having a network of creative</p>
-                <p className='text-[8px] md:text-sm py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum feugiat consequat. Suspendisse est arcu, iaculis nec imperdiet ac, mollis varius augue. Aliquam in consequat arcu. Donec luctus tempor dui, sed rutrum turpis dignissim ut. Sed placerat dui dolor, nec vulputate urna rhoncus vel. Aenean ut est aliquam enim vestibulum dapibus. Fusce at condimentum tellus, vitae porttitor nibh. Aliquam faucibus auctor metus sed ullamcorper. Ut blandit</p>
+                <p className='text-[8px] md:text-sm py-4'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    iaculis nec imperdiet ac, mollis varius augue. Aliquam in consequat.
+                    dignissim ut. Sed placerat dui dolor, nec vulputate urna rhoncus vel.
+                </p>
                 <ButtonForward textChildren="Discover more" />
             </div>
-            <div className='flex md:block rounded-r-2xl md:rounded-r-3xl overflow-hidden'>
+            <div className='flex md:block rounded-r-2xl md:rounded-r-3xl overflow-hidden md:w-2/5'>
                 <Image src={discoverImg} className="w-[80%] md:w-full md:min-h-screen object-cover" alt="Discover Image" />
             </div>
         </div>

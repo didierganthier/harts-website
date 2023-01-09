@@ -3,7 +3,7 @@ import ButtonForward from './ButtonForward'
 
 const LearningComponent = () => {
     return (
-        <div className="bg-white py-10 px-4 md:px-12">
+        <div className="bg-white py-24 px-4 md:px-12">
             <p className='font-extrabold text-[10px] text-center'>OUR LABS COURSES DESIGN JUST FOR YOU</p>
             <p className='uppercase text-2xl pb-2 font-extrabold text-[#B88222] px-10 text-center py-5'>Learning from Harts Lab</p>
             <p className='text-[8px] md:text-sm py-2'>
