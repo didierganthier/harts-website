@@ -20,9 +20,9 @@ const LearningComponent = () => {
                 nec vulputate urna rhoncus vel. Aenean ut est aliquam enim vestibulum dapibus.
                 Fusce at condimentum tellus, vitae porttitor nibh. Aliquam faucibus auctor metus sed ullamcorper. Ut blandit
             </p>
-            <div className='flex flex-col md:flex-row mx-[100px] text-center justify-center my-5 gap-5'>
-                <ButtonForward textChildren="discover more" />
-                <ButtonForward textChildren="Enroll now" textColor="text-white" backgroundColor="bg-[#222222]" />
+            <div className='flex flex-col md:flex-row mx-[100px] text-center justify-center my-5 md:mt-14 gap-5'>
+                <ButtonForward textChildren="discover more" textColor="font-bold" />
+                <ButtonForward textChildren="Enroll now" textColor="text-white font-bold" backgroundColor="bg-[#222222]" />
             </div>
         </div>
     )
