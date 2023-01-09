@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation,EffectCoverflow, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import DiscoverComponent from '../components/DiscoverComponent';
@@ -58,23 +58,23 @@ export default function Home() {
       <LearningComponent />
       <div className='flex flex-col justify-center items-center rounded-tl-3xl bg-[#222222]'>
         <p className='uppercase my-8 text-white text-xl font-bold'>Unlock your potential</p>
-        <div className='mb-5'>
+        <div className='container mb-5 md:flex w-full justify-around'>
           <div className='flex flex-col gap-4'>
-            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg border-2 border-white' width="250" height="250" />
             <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
               <p>Art + Painting</p>
               <svg className="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </div>
           </div>
-          <div className='flex flex-col gap-4 my-8'>
-            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+          <div className='flex flex-col gap-4 my-8 md:my-0 scale-125'>
+            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg border-2 border-white' width="250" height="250" />
             <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
               <p>Art + Painting</p>
               <svg className="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </div>
           </div>
-          <div className='flex flex-col gap-4 my-8'>
-            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg' width="250" height="250" />
+          <div className='flex flex-col gap-4 my-8 md:my-0'>
+            <Image src={artPainting} alt="Hart's Logo" className='rounded-lg border-2 border-white' width="250" height="250" />
             <div className='flex gap-2 text-[#B88222] items-center font-bold text-sm'>
               <p>Art + Painting</p>
               <svg className="w-4 h-4" fill="none" stroke="#B88222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
@@ -84,16 +84,41 @@ export default function Home() {
       </div>
       <div className='flex flex-col justify-center items-center bg-[#222222]'>
         <p className='uppercase my-8 text-white text-xl font-bold text-center'>Where creativity meets Productivity</p>
-        <Swiper 
+        {/* <Swiper 
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           onSlideChange={() => console.log('slide change')}
-        >
+        > */}
+        <Swiper
+        effect={"coverflow"}
+        slidesPerView={3}
+        spaceBetween={30}
+        loop={true}
+        grabCursor={true}
+        centeredSlides={true}
+        coverflowEffect={{
+          rotate: 35,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false
+        }}
+        navigation
+        pagination={true}
+        modules={[EffectCoverflow, Pagination, Navigation, A11y]}
+        className="md:w-2/3 w-full my-5"
+      >
             <SwiperSlide>
               <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
+              {/* <p className='text-white'>Art + Painting</p>
+              <p className='text-white'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum feugiat consequat. Suspendisse est arcu,
+                iaculis nec imperdiet ac, mollis varius augue. Aliquam in consequat arcu. Donec luctus tempor dui, sed rutrum turpis
+                dignissim ut. Sed placerat dui dolor, nec vulputate urna rhoncus vel.
+              </p> */}
             </SwiperSlide>
             <SwiperSlide>
               <Image src={artPainting} alt="Hart's Logo" className='rounded-lg mx-auto' width="250" height="250" />
