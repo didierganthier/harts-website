@@ -32,15 +32,15 @@
 }
 
 .swiper-button-next, .swiper-button-prev {
-  top: 90% !important;
+  top: 80% !important;
 }
 
 .swiper-button-prev {
-  left: 17rem  !important;
+  left: 40%  !important;
 }
 
 .swiper-button-next {
-  right: 17rem  !important;
+  right: 40%  !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -49,4 +49,5 @@
 
 .swiper-pagination {
   position: relative !important;
+  margin: 2rem auto;
 }
