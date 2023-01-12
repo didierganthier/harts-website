@@ -6,14 +6,14 @@ const LearningComponent = () => {
         <div className="bg-white py-24 px-4 md:px-12">
             <p className='font-extrabold text-[10px] text-center'>OUR LABS COURSES DESIGN JUST FOR YOU</p>
             <p className='uppercase text-2xl pb-2 font-extrabold text-[#B88222] px-10 text-center py-5'>Learning from Harts Lab</p>
-            <p className='text-[8px] md:text-sm py-2'>
+            <p className='text-[8px] md:text-sm py-2 md:w-4/5 mx-auto'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Proin bibendum feugiat consequat. Suspendisse est arcu, iaculis nec imperdiet ac, mollis varius augue.
                 Aliquam in consequat arcu. Donec luctus tempor dui, sed rutrum turpis dignissim ut. Sed placerat dui dolor,
                 nec vulputate urna rhoncus vel. Aenean ut est aliquam enim vestibulum dapibus.
                 Fusce at condimentum tellus, vitae porttitor nibh. Aliquam faucibus auctor metus sed ullamcorper. Ut blandit
             </p>
-            <p className='text-[8px] md:text-sm py-2'>
+            <p className='text-[8px] md:text-sm py-2 md:w-4/5 mx-auto'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Proin bibendum feugiat consequat. Suspendisse est arcu, iaculis nec imperdiet ac, mollis varius augue.
                 Aliquam in consequat arcu. Donec luctus tempor dui, sed rutrum turpis dignissim ut. Sed placerat dui dolor,

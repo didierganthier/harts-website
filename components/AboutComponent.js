@@ -7,17 +7,17 @@ import ButtonForward from './ButtonForward';
 const AboutComponent = () => {
     return (
         <div className='bg-[#222222]'>
-            <div className='mx-4 py-8'>
+            <div className='mx-4 py-8 md:py-16'>
                 <p className='pb-1 font-bold uppercase text-[12px] text-center text-[#B88222]'>About Us</p>
                 <p className='uppercase text-2xl text-white pb-2 font-extrabold text-center'>Hart's Family</p>
-                <p className='text-[8px] py-2 text-white text-justify'>
+                <p className='text-[8px] py-2 text-white text-justify md:text-sm md:w-4/5 mx-auto'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Proin bibendum feugiat consequat. Suspendisse est arcu, iaculis nec imperdiet ac, mollis varius augue.
                 Aliquam in consequat arcu. Donec luctus tempor dui, sed rutrum turpis dignissim ut. Sed placerat dui dolor,
                 nec vulputate urna rhoncus vel. Aenean ut est aliquam enim vestibulum dapibus.
                 Fusce at condimentum tellus, vitae porttitor nibh. Aliquam faucibus auctor metus sed ullamcorper. Ut blandit
             </p>
-            <p className='text-[8px] py-2 text-white text-justify'>
+            <p className='text-[8px] py-2 text-white text-justif md:text-sm md:w-4/5 mx-auto'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Proin bibendum feugiat consequat. Suspendisse est arcu, iaculis nec imperdiet ac, mollis varius augue.
                 Aliquam in consequat arcu. Donec luctus tempor dui, sed rutrum turpis dignissim ut. Sed placerat dui dolor,
@@ -30,11 +30,12 @@ const AboutComponent = () => {
             </div>
             </div>
             <div className='grid grid-flow-col auto-cols-max w-full overflow-hidden'>
-                <Image src={discoverImg} className="about-image max-w-xs" alt="Discover Image" />
-                <Image src={artPainting} className="about-image max-w-xs" alt="Painting Image" />
-                <Image src={discoverImg} className="about-image max-w-xs" alt="Discover Image" />
-                <Image src={artPainting} className="about-image max-w-xs" alt="Painting Image" />
-                <Image src={discoverImg} className="about-image max-w-xs" alt="Discover Image" />                
+                <Image src={discoverImg} className="about-image max-w-xs md:max-w-xs" alt="Discover Image" />
+                <Image src={artPainting} className="about-image max-w-xs md:max-w-xs" alt="Painting Image" />
+                <Image src={discoverImg} className="about-image max-w-xs md:max-w-xs" alt="Discover Image" />
+                <Image src={artPainting} className="about-image max-w-xs md:max-w-xs" alt="Painting Image" />
+                <Image src={discoverImg} className="about-image max-w-xs md:max-w-xs" alt="Discover Image" />
+                <Image src={artPainting} className="about-image max-w-xs md:max-w-xs" alt="Painting Image" />        
             </div>
         </div>
     )
